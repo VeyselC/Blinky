@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dax version="1.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.absint.com/dtd/a3-dax-23.04.xsd" xmlns="http://www.absint.com/dax">
+    <rulechecks name="Default Configuration">
+        <rules>
+            <A.>yes</A.>
+            <A.2.>no</A.2.>
+            <M2012.>yes</M2012.>
+            <M2012A1.>yes</M2012A1.>
+        </rules>
+        <paths>
+            <path action="add" kind="folder">.</path>
+        </paths>
+    </rulechecks>
+    <abi import="${A3_SHARE_DIR}/abi/arm6littleendian.dax" />
+    <parser-ignore>
+        <function>__asm void</function>
+        <function>static __asm</function>
+        <identifier>_ARMABI</identifier>
+    </parser-ignore>
+</dax>

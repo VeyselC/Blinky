@@ -1,0 +1,8 @@
+-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -c11
+-I.\RTE\Device\STM32F103RB
+-I.\RTE\_target
+-IC:\Users\vcarpan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+-IC:\Users\vcarpan\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.16.0\Board
+-IC:\Users\vcarpan\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F10X_MD -D_RTE_
+-o .\flash\blinky.o --omf_browse .\flash\blinky.crf --depend .\flash\blinky.d "Blinky.c"

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dax mode="rulechecker" version="1.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.absint.com/dtd/a3-dax-23.04.xsd" xmlns="http://www.absint.com/dax">
+    <name>Blinky - Wed Nov 1 14:12:31 2023</name>
+    <preprocess import="Blinky-configuration.dax">
+        <clibrary>yes</clibrary>
+        <config name="base">
+            <language>C</language>
+            <includes>
+                <include>C:\Keil_v5\ARM\ARMCC\include</include>
+            </includes>
+            <defines>
+                <define>__CC_ARM</define>
+                <define>__NO_EMBEDDED_ASM</define>
+                <define>__has_builtin(...)=0</define>
+            </defines>
+            <automatic-includes>
+                <automatic-include>${A3_SHARE_DIR}\intrinsics\arm.h</automatic-include>
+                <automatic-include>${A3_SHARE_DIR}\intrinsics\keil_intrinsics.h</automatic-include>
+            </automatic-includes>
+        </config>
+    </preprocess>
+    <rulechecks import="Blinky-configuration.dax" />
+    <abi import="Blinky-configuration.dax" />
+    <parser-ignore import="Blinky-configuration.dax" />
+    <options import="Blinky-configuration.dax" />
+    <annotations import="Blinky-configuration.dax" />
+    <external-declarations import="Blinky-configuration.dax" />
+    <reports import="Blinky-configuration.dax" />
+</dax>
