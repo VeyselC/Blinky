@@ -46,7 +46,7 @@ int main (void) {
   long num = 0;
 	long nAm = 0;
 
-	int asd;
+	int asd123;
   for (;;) {
 
 
